@@ -37,6 +37,8 @@ def isPalindrome(string):
 
 # Test runs
 print("---------------------------")
+print isPalindrome(163) # not a palindrome
+print("---------------------------")
 print isPalindrome("dad")
 print("---------------------------")
 print isPalindrome("this is a string.") # not a palindrome
