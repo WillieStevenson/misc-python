@@ -2,8 +2,8 @@
 
 ##
 #
-# A quick/naive way to check status/availibility of any sites passed.
-# If unavailible, this script sends an alert email to an admin.
+# A quick/naive way to check status/availability of any sites passed.
+# If unavailable, this script sends an alert email to an admin.
 #
 # Author: Willie Stevenson
 #
