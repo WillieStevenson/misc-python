@@ -12,7 +12,7 @@
 def send_alert(status_code, site_name):
 
    RECIPIENTS = ['admin1@example.com', 'admin2@example.com']
-   SUBJECT = 'Site down/unavailible at ' + time.strftime("%d/%m/%Y %H:%M:%S")
+   SUBJECT = 'Site down/unavailable at ' + time.strftime("%d/%m/%Y %H:%M:%S")
    MSG_TXT = "Status Code: " + status_code + " -> " + site_name + "\n"
    	 
    message = 'Subject: %s\n\n%s' % (SUBJECT, MSG_TXT)
