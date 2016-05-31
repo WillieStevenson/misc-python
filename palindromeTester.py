@@ -3,7 +3,7 @@
 #
 # This is a function called isPalindrome.
 # It accepts a string and returns a boolean.
-# True is the string is a palindrome and false otherwise.
+# True if the string is a palindrome and false otherwise.
 # 
 #
 # @param string; string; a string maybe containing a palindrome;
@@ -17,7 +17,7 @@ def isPalindrome(string):
 	if not isinstance(string, str):
 		return "Wrong data type."
 	string = string.lower() # 
-	string = re.sub(r'\W+', '', string) # (matches [^a-zA-Z0-9_] removes everyting else)
+	string = re.sub(r'\W+', '', string) # (matches [^a-zA-Z0-9_] removes everything else)
 	
 	if len(string) == 0:
 		return True # Empty string is considered palindrome
