@@ -1,7 +1,7 @@
 # logical-to-physical-address-translator-using-page-tables
 Logical to physical address translator using page tables
 
-Wrote for solving my operating systems class homework.
+I wrote this to automate solving my operating systems class homework.
 
 ## Run
 
