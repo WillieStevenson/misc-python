@@ -1,4 +1,4 @@
-# sudoku-solver
+# logical-to-physical-address-translator-using-page-tables
 Logical to physical address translator using page tables
 
 Wrote for solving my operating systems class homework.
