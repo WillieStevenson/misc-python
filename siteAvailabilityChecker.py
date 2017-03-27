@@ -24,10 +24,12 @@ def send_alert(status_code, site_name):
 if __name__ == "__main__":
 
 	import sys
-	# import os
 	import subprocess
 	import smtplib
 	import time
+
+	# put status codes to check against here (i.e., not found, unavailable/down)
+	codes = ["404", "503"]
 
 	if len(sys.argv) < 2:
 		print "See %s --help / -h / help for more details.\n" % sys.argv[0]
@@ -37,10 +39,9 @@ if __name__ == "__main__":
 			    print "Must take at least one site as an argument.\n"
 			    print "Example Usage\n $ python %s site_name1 site_name2 site_name3\n" % arg[0]
 			else:
-				#status_code = os.system("curl -s -o /dev/null -w %{http_code} " + arg)
 				status_code = subprocess.check_output("curl -s -o /dev/null -w %{http_code} " + arg, shell=True)
 
-				if (status_code == "404" or status_code == "502" or status_code == "503" or status_code == "504"):
+				if (status_code in codes):
 					send_alert(status_code, arg)
 
 
